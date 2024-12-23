@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Toko Buku Online</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HallyuBooks - Toko Buku Online</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#home">
-          <i class="fas fa-book-open me-2"></i>
-          BukuKita
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <div class="d-flex align-items-center w-100">
+                <a class="navbar-brand d-flex align-items-center" href="#home">
+                    <i class="fas fa-book me-2"></i>
+                    <span class="logo-text">HallyuBooks</span>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#orders">Orders</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -39,11 +56,11 @@
     <section id="home" class="section-page">
       <div class="jumbotron-section">
         <div class="container text-center">
-          <h1 class="display-4 floating">Selamat Datang di BukuKita</h1>
-          <p class="lead">Temukan berbagai koleksi buku terbaik untuk menemani perjalanan literasimu</p>
+          <h1 class="display-4 floating">Welcome to HallyuBooks</h1>
+          <p class="lead">Where Stories Meet Your Heartbeat</p>
           <hr class="my-4" />
-          <p>Mulai eksplorasi perpustakaan digital kami sekarang!</p>
-          <a class="btn btn-custom btn-lg" href="#orders" role="button">Pesan Sekarang</a>
+          <p>Let's explore 'hallyu' through our digital collection!</p>
+          <a class="btn btn-custom btn-lg" href="#orders" role="button">Order Now</a>
         </div>
         <div class="wave"></div>
       </div>
@@ -52,28 +69,34 @@
     <!-- About Section -->
     <section id="about" class="section-page">
       <div class="container py-5">
-        <h2 class="text-center mb-4 section-title">Tentang Kami</h2>
+        <h2 class="text-center mb-4 section-title">About</h2>
         <div class="row justify-content-center align-items-center">
           <div class="col-md-6">
-            <img src="/api/placeholder/600/400" alt="Toko Buku" class="img-fluid rounded shadow-lg mb-4" />
+            <img src="img/logo.png" alt="HallyuBooks" class="rounded-circle" />
           </div>
           <div class="col-md-6">
             <div class="about-content">
-              <h3 class="mb-4">BukuKita - Teman Setia Membacamu</h3>
-              <p>BukuKita adalah toko buku online terpercaya yang telah melayani pecinta buku di seluruh Indonesia sejak tahun 2010. Kami berkomitmen untuk menyediakan berbagai koleksi buku berkualitas dengan harga terjangkau.</p>
-              <p>Visi kami adalah menjadi platform literasi terdepan yang memudahkan akses ke dunia pengetahuan dan hiburan melalui buku. Kami percaya bahwa membaca adalah kunci untuk membuka pintu kesuksesan dan kreativitas.</p>
+              <h3 class="mb-4">HallyuBooks</h3>
+              <p>
+                HallyuBooks is a place where the love of books meets the charm of Korean culture. Inspired by the Hallyu wave that has captivated the world, we are committed to taking you on a fun, colorful, and meaningful literary
+                journey—just like your favorite songs.
+              </p>
+              <p>
+                At HallyuBooks, we believe that every book is like a song: it has its own unique story, emotion, and rhythm. Our collection spans a wide range of genres, from heart-pounding fiction to insightful non-fiction. Not only that,
+                we also provide Korean-themed books, such as K-literature novels, Korean language textbooks, and authentic Korean culture guides.
+              </p>
               <div class="features mt-4">
                 <div class="feature-item">
                   <i class="fas fa-shipping-fast"></i>
-                  <span>Pengiriman Cepat</span>
+                  <span>Fast delivery</span>
                 </div>
                 <div class="feature-item">
                   <i class="fas fa-book"></i>
-                  <span>Koleksi Lengkap</span>
+                  <span>Complete collection</span>
                 </div>
                 <div class="feature-item">
                   <i class="fas fa-tags"></i>
-                  <span>Harga Bersaing</span>
+                  <span>Competitive price</span>
                 </div>
               </div>
             </div>
@@ -85,55 +108,49 @@
     <!-- Orders Section -->
     <section id="orders" class="section-page">
       <div class="container py-5">
-        <h2 class="text-center mb-4 section-title">Form Pemesanan Buku</h2>
+        <h2 class="text-center mb-4 section-title">Book Order Form</h2>
         <div class="row justify-content-center">
           <div class="col-md-8">
             <div class="card shadow-lg">
               <div class="card-body p-5">
-                <form>
+                <form name="Contact Form">
+                  <form name="Contact-Form"></form>
                   <div class="mb-3">
-                    <label class="form-label">Nama</label>
-                    <input type="text" class="form-control" required />
-                  </div>
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="name" name="name"> </div>
                   <div class="mb-3">
-                    <label class="form-label">Email</label>
-                    <input type="email" class="form-control" required />
-                  </div>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="email" name="email"></div>
                   <div class="mb-3">
-                    <label class="form-label">Alamat</label>
-                    <textarea class="form-control" rows="3" required></textarea>
-                  </div>
+                    <label for="address" class="form-label">Address</Address></label>
+                    <input type="text" class="form-control" id="address" aria-describedby="address" name="address"></div>
                   <div class="mb-3">
-                    <label class="form-label">Judul Buku</label>
-                    <input type="text" class="form-control" required />
-                  </div>
+                    <label for="book_tittle" class="form-label">Book Tittle</label>
+                    <input type="text" class="form-control" id="book_tittle" aria-describedby="book_tittle" name="book_tittle"></div>
                   <div class="mb-3">
-                    <label class="form-label">Jumlah Pembelian</label>
-                    <input type="number" class="form-control" min="1" required />
-                  </div>
-                  <button type="submit" class="btn btn-custom w-100">Pesan Sekarang</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <label for="purchase_amount" class="form-label">Purchase Amount</label>
+                    <input type="text" class="form-control" id="purchase_amount" aria-describedby="purchase_amount" name="purchase_amount"></div>
+
+                  <button type="submit" class="btn btn-primary">Order Now</button>
+                   </form>
+                   </div>
+                   </div>
+                    </div>
 
     <!-- Footer -->
     <footer class="py-4">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h5>Alamat</h5>
-            <p>Jl. Buku Indah No. 123<br />Jakarta Pusat, 10110</p>
+            <h5>Address</h5>
+            <p>Myeongdong Street<br />Distrik Jung, Seoul</p>
           </div>
           <div class="col-md-4">
-            <h5>Kontak</h5>
-            <p>Email: info@bukukita.com<br />Tel: (021) 123-4567</p>
+            <h5>Contact</h5>
+            <p>Email: info@hallyubooks.com<br />Telp: (62) 123 456</p>
           </div>
           <div class="col-md-4">
-            <h5>Sosial Media</h5>
+            <h5>Social Media</h5>
             <div class="social-links">
               <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
               <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
@@ -143,7 +160,17 @@
         </div>
       </div>
     </footer>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbwkELpkCejfHKgcnQQzJG1O3oQTJSL1OBZeriUNg_FZ90t8HQZTc0EwSl9eNvesJYM_Dg/exec/exec';
+    const form = document.forms["Contact-Form"];
+    form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => console.log("Success!", response))
+      .catch((error) => console.error("Error!", error.message));
+  });
+  </script>
   </body>
-</html>
+  </html>
